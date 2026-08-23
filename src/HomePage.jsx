@@ -54,6 +54,50 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+       <section className="features" id="features">
+
+        <div className="section-title">
+          <p>WHAT WE USE</p>
+          <h2>React Features</h2>
+        </div>
+
+        {search && (
+          <p className="search-result">
+            Searching for: <strong>{search}</strong>
+          </p>
+        )}
+
+        <div className="feature-container">
+
+          {filteredFeatures.length > 0 ? (
+            filteredFeatures.map((feature) => (
+              <div className="feature-card" key={feature.title}>
+
+                <div className="feature-icon">
+                  ⚛
+                </div>
+
+                <h3>{feature.title}</h3>
+
+                <p>{feature.description}</p>
+
+              </div>
+            ))
+          ) : (
+            <div className="no-results">
+              <h3>No results found</h3>
+
+              <p>
+                Try searching for React, Router, Components,
+                or State.
+              </p>
+            </div>
+          )}
+
+        </div>
+
+      </section>
     </main>
   );
 }
