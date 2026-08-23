@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-import HomePage from "./Homepage";
-import AboutPage from "./Aboutpage";
+import HomePage from "./HomePage";
+import AboutPage from "./AboutPage";
 import Footer from "./Footer";
 
 function App() {
