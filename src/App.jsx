@@ -6,6 +6,8 @@ import AboutPage from "./Aboutpage";
 import Footer from "./Footer";
 
 function App() {
+    const [search, setSearch] = useState("");
+    
   return (
     <BrowserRouter>
       <div className="app">
