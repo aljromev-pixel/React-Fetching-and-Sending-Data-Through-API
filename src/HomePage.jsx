@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function HomePage() {
+function HomePage({ search }) {
   const [count, setCount] = useState(0);
 
   const features = [
@@ -49,7 +49,7 @@ function HomePage() {
 
           <div className="hero-buttons">
             <a href="#counter" className="primary-button">
-              Try Our App
+              Try My App
             </a>
           </div>
         </div>
@@ -58,7 +58,7 @@ function HomePage() {
        <section className="features" id="features">
 
         <div className="section-title">
-          <p>WHAT WE USE</p>
+          <p>What we Use</p>
           <h2>React Features</h2>
         </div>
 
