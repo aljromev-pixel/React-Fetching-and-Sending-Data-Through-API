@@ -5,24 +5,27 @@ function HomePage() {
 
   return (
     <main>
-      <section className="page">
-        <h1>CCS-112 React Project!</h1>
+      <section className="hero">
+        <div className="hero-content">
+          <p className="small-title">Welcome to my React Webpage</p>
 
-        <p>Welcome to my Homepage.</p>
+          <h1>
+            CCS-112
+            <br />
+            <span>React App</span>
+          </h1>
 
-        <h2>Counter: {count}</h2>
+          <p className="hero-description">
+            A simple React application demonstrating components,
+            React Router, and state management.
+          </p>
 
-        <button onClick={() => setCount(count + 1)}>
-          Increase
-        </button>
-
-        <button onClick={() => setCount(count - 1)}>
-          Decrease
-        </button>
-
-        <button onClick={() => setCount(0)}>
-          Reset
-        </button>
+          <div className="hero-buttons">
+            <a href="#counter" className="primary-button">
+              Try Our App
+            </a>
+          </div>
+        </div>
       </section>
     </main>
   );
