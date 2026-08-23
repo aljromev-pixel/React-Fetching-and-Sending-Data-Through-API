@@ -19,48 +19,48 @@ a {
 }
 
 .navbar {
+  width: 100%;
   min-height: 72px;
-  padding: 0 7%;
+  padding: 12px 6%;
   background: #172554;
+
   display: flex;
   align-items: center;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 25px;
+
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-  color: #ffffff !important;
+  color: white !important;
   font-size: 24px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  margin-right: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
 }
-
-/* NAVIGATION */
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 28px;
-  flex: 1;
+  gap: 25px;
 }
 
 .nav-links a {
-  color: #ffffff !important;
+  color: white !important;
+  text-decoration: none;
   font-size: 16px;
-  font-weight: 600;
-  padding: 10px 4px;
-  transition: 0.3s;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
   color: #93c5fd !important;
 }
-
-/* SEARCH */
 
 .search-box {
   display: flex;
@@ -69,14 +69,19 @@ a {
 }
 
 .search-box input {
-  width: 190px;
-  padding: 10px 14px;
-  border: 1px solid #93c5fd;
-  border-radius: 7px;
-  outline: none;
-  font-size: 14px;
-  background: #ffffff;
+  width: 200px;
+  height: 40px;
+
+  padding: 0 14px;
+
+  border: 2px solid #93c5fd;
+  border-radius: 6px;
+
+  background: white;
   color: #172033;
+
+  font-size: 14px;
+  outline: none;
 }
 
 .search-box input::placeholder {
@@ -88,12 +93,19 @@ a {
 }
 
 .search-box button {
-  padding: 10px 14px;
+  height: 40px;
+
+  padding: 0 15px;
+
   border: none;
-  border-radius: 7px;
+  border-radius: 6px;
+
   background: #3b82f6;
-  color: #ffffff;
-  font-weight: 600;
+  color: white;
+
+  font-size: 14px;
+  font-weight: bold;
+
   cursor: pointer;
 }
 
@@ -346,59 +358,27 @@ a {
 }
 
 @media (max-width: 800px) {
+
   .navbar {
     flex-wrap: wrap;
     padding: 15px 5%;
-    gap: 15px;
+  }
+
+  .logo {
+    order: 1;
   }
 
   .nav-links {
+    order: 2;
+  }
+
+  .search-box {
     order: 3;
     width: 100%;
   }
 
-  .search-box {
-    margin-left: auto;
-  }
-
-  .feature-container {
-    grid-template-columns: 1fr;
-  }
-
-  .about-content {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 45px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .footer-info {
-    text-align: center;
-  }
-}
-
-@media (max-width: 500px) {
   .search-box input {
-    width: 130px;
-  }
-
-  .hero {
-    padding: 80px 5%;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  .features,
-  .counter-section {
-    padding: 60px 5%;
+    flex: 1;
+    width: auto;
   }
 }
