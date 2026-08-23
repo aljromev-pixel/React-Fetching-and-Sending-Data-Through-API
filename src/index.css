@@ -43,7 +43,7 @@ a {
   min-height: 75px;
   padding: 10px 6%;
 
-  background-color: #172554;
+  background-color: #0d1530;
 
   display: flex;
   align-items: center;
@@ -359,7 +359,7 @@ a {
 
 .footer {
   width: 100%;
-  background: #172554;
+  background: #0d1530;
   color: white;
   padding: 35px 7%;
   margin-top: auto;
