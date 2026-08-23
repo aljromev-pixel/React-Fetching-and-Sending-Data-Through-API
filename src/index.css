@@ -358,31 +358,40 @@ a {
 }
 
 .footer {
+  width: 100%;
   background: #172554;
   color: white;
-  padding: 35px 8%;
+  padding: 35px 7%;
+  margin-top: auto;
 }
 
 .footer-content {
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer h2 {
+.footer-brand h2 {
   margin-bottom: 5px;
+  color: white;
 }
 
-.footer p {
+.footer-brand p {
   color: #bfdbfe;
   font-size: 14px;
 }
 
 .footer-info {
   text-align: right;
-  line-height: 1.8;
+}
+
+.footer-info p {
+  color: #bfdbfe;
+  font-size: 14px;
+  margin: 5px 0;
 }
 
 @media (max-width: 800px) {
