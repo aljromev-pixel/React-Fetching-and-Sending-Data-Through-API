@@ -5,6 +5,7 @@ import logo from "./logo.svg";
 import HomePage from "./HomePage";
 import AboutPage from "./AboutPage";
 import Footer from "./Footer";
+import ProductDetail from "./ProductDetail";
 
 function App() {
   const [search, setSearch] = useState("");
