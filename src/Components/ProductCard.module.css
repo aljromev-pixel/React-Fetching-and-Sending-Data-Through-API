@@ -6,3 +6,21 @@
     margin: 10px;
   }
   
+  .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+  }
+  
+  .quantity button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .quantity span {
+    min-width: 20px;
+    font-weight: bold;
+  }
