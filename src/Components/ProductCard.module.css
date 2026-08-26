@@ -24,3 +24,33 @@
     min-width: 20px;
     font-weight: bold;
   }
+
+  .product-detail {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 0 30px;
+  }
+
+  .product-detail h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .product-detail p {
+    color: #4b5563;
+    font-size: 16px;
+  }
+
+  .product-detail a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #2563eb;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .product-detail a:hover {
+    text-decoration: underline;
+  }
