@@ -4,8 +4,8 @@ import logo from "./logo.svg";
 
 import HomePage from "./HomePage";
 import AboutPage from "./AboutPage";
-import Footer from "./Footer";
 import ProductDetail from "./ProductDetail";
+import Footer from "./Footer";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -54,6 +54,11 @@ function App() {
           <Route
             path="/about"
             element={<AboutPage />}
+          />
+
+          <Route
+            path="/products/:id"
+            element={<ProductDetail />}
           />
         </Routes>
 
