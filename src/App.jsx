@@ -4,7 +4,7 @@ import logo from "./logo.svg";
 
 import HomePage from "./HomePage";
 import AboutPage from "./AboutPage";
-import ProductDetail from "./ProductDetail";
+import ProductDetail from "./Components/ProductDetail";
 import Footer from "./Footer";
 
 function App() {

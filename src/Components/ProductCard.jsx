@@ -28,6 +28,10 @@ export default function ProductCard({ product }) {
 
         <button onClick={increaseQuantity}>+</button>
       </div>
+
+      <Link to={`/products/${product.id}`}>
+        View Details
+      </Link>
     </div>
   );
 }
